@@ -2,6 +2,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.time.OffsetDateTime;
+import java.util.List;
 
 public class Main {
 
@@ -29,5 +30,24 @@ public class Main {
             System.err.println("Could not read booking data from "
                     + BOOKINGS_FILE + ": " + exception.getMessage());
         }
+        try {
+            List<DiscountCode> rabattcodes =
+                    DiscountCodeReader.readDiscountCodes();
+
+            for (DiscountCode rabattcode : rabattcodes) {
+                System.out.println(rabattcode);
+            }
+
+            System.out.println(
+                    "Anzahl gelesener Rabattcodes: " + rabattcodes.size()
+            );
+
+        } catch (IOException e) {
+            System.err.println(
+                    "Fehler beim Einlesen der Rabattcodes:"
+            );
+            System.err.println(e.getMessage());
+        }
     }
+
 }
