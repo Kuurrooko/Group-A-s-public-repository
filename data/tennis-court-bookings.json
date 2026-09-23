@@ -14,6 +14,62 @@
       "surface": "hard",
       "indoor": false,
       "active": true
+    },
+    {
+      "id": "court-3",
+      "name": "Court 3",
+      "surface": "clay",
+      "indoor": false,
+      "active": true
+    },
+    {
+      "id": "court-4",
+      "name": "Court 4",
+      "surface": "clay",
+      "indoor": false,
+      "active": true
+    },
+    {
+      "id": "court-5",
+      "name": "Court 5",
+      "surface": "hard",
+      "indoor": true,
+      "active": true
+    },
+    {
+      "id": "court-6",
+      "name": "Court 6",
+      "surface": "hard",
+      "indoor": true,
+      "active": true
+    },
+    {
+      "id": "court-7",
+      "name": "Court 7",
+      "surface": "clay",
+      "indoor": true,
+      "active": true
+    },
+    {
+      "id": "court-8",
+      "name": "Court 8",
+      "surface": "grass",
+      "indoor": false,
+      "active": true
+    },
+    {
+      "id": "court-9",
+      "name": "Court 9",
+      "surface": "hard",
+      "indoor": false,
+      "active": false
+    },
+    {
+      "id": "court-10",
+      "name": "Court 10",
+      "surface": "clay",
+      "indoor": false,
+      "active": true
     }
   ],
   "bookings": [
@@ -25,6 +81,42 @@
       "end": "2026-09-24T17:00:00+02:00",
       "status": "confirmed",
       "createdAt": "2026-09-23T18:00:00+02:00"
+    },
+    {
+      "id": "booking-002",
+      "courtId": "court-2",
+      "bookedBy": "anna@example.com",
+      "start": "2026-09-24T17:00:00+02:00",
+      "end": "2026-09-24T18:30:00+02:00",
+      "status": "confirmed",
+      "createdAt": "2026-09-23T18:05:00+02:00"
+    },
+    {
+      "id": "booking-003",
+      "courtId": "court-3",
+      "bookedBy": "max@example.com",
+      "start": "2026-09-24T18:00:00+02:00",
+      "end": "2026-09-24T19:00:00+02:00",
+      "status": "confirmed",
+      "createdAt": "2026-09-23T18:10:00+02:00"
+    },
+    {
+      "id": "booking-004",
+      "courtId": "court-5",
+      "bookedBy": "lisa@example.com",
+      "start": "2026-09-25T10:00:00+02:00",
+      "end": "2026-09-25T11:00:00+02:00",
+      "status": "confirmed",
+      "createdAt": "2026-09-23T18:15:00+02:00"
+    },
+    {
+      "id": "booking-005",
+      "courtId": "court-7",
+      "bookedBy": "tom@example.com",
+      "start": "2026-09-25T14:00:00+02:00",
+      "end": "2026-09-25T15:30:00+02:00",
+      "status": "confirmed",
+      "createdAt": "2026-09-23T18:20:00+02:00"
     }
   ]
 }
